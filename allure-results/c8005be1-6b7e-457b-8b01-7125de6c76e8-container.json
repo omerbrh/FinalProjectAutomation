@@ -1,0 +1,1 @@
+{"uuid":"c8005be1-6b7e-457b-8b01-7125de6c76e8","name":"magento.com.tests.BuyingMensClothesTest","children":["3b56fdc2-69fb-4525-a5c7-8fc13eee8651"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1740828690629,"stop":1740828696026}],"afters":[],"start":1740828690585,"stop":1740828699107}

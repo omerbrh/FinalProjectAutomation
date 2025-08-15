@@ -1,0 +1,1 @@
+{"uuid":"3ac49ada-99c9-4878-99e8-e69e58ed928a","name":"magento.com.tests.SignInTest","children":["7ec23cfb-9c30-4db9-a1dd-3d45c3cd1c91"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1738929806970,"stop":1738929813427}],"afters":[],"start":1738929806876,"stop":1738929813923}
