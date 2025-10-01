@@ -1,0 +1,22 @@
+# ==== Build and IDE ====
+/target/
+/.settings/
+/.idea/
+*.iml
+.classpath
+.project
+
+# ==== Test reports ====
+/allure-results/
+/allure-report/
+/test-output/
+/.allure/
+
+# ==== Logs ====
+*.log
+
+# ==== Env files ====
+.env
+
+# ==== Node (if used) ====
+node_modules/
