@@ -2,42 +2,32 @@ package magento.com.pageobject;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class MenuToolBar extends BasePage {
 
-
-	@FindBy(css = "#ui-id-4 > span:nth-child(2)")
-	protected WebElement Womanbtn;
-	@FindBy(css = "#ui-id-5 > span:nth-child(2)")
-
 	// Men menu elements
+	@FindBy(css = "#ui-id-12")
 	protected WebElement Menbtn;
-	@FindBy(css = "#ui-id-5 > span.ui-menu-icon.ui-icon.ui-icon-carat-1-e")
-	protected WebElement MensMarker;
-	@FindBy(css = "#ui-id-17 > span:nth-child(2)")
+	@FindBy(css = "#ui-id-13")
 	protected WebElement Topsbtn;
-	@FindBy(css = "#ui-id-19")
-	protected WebElement Jacketsbtn;
 	@FindBy(css = "#ui-id-18")
 	protected WebElement Bottombtn;
 
 	// Women menu elements
 
-	@FindBy(css = "#ui-id-4")
+	@FindBy(css = "#ui-id-3")
 	protected WebElement Womenbtn;
-	@FindBy(css = "#ui-id-9")
+	@FindBy(css = "#ui-id-4")
 	protected WebElement WomenTopbtn;
-	@FindBy(css = "#ui-id-10")
+	@FindBy(css = "#ui-id-9")
 	protected WebElement WomenBottomsbtn;
 
 	// Gear menu element
-	@FindBy(css = "#ui-id-6")
+	@FindBy(css = "#ui-id-21")
 	protected WebElement Gearbtn;
 
 	// cart buttons
@@ -53,12 +43,45 @@ public class MenuToolBar extends BasePage {
 	protected WebElement MSignInbtn;
 
 	// Validation on this page
-	@FindBy(css = " header > div.panel.wrapper > div > ul > li.greet.welcome > span")
+	@FindBy(css = "[class=\"panel header\"]>[class=\"header links\"]>[class=\"greet welcome\"]>[class=\"logged-in\"]")
 	protected WebElement WelcomeUser;
 
 	public MenuToolBar(WebDriver driver) {
 		super(driver);
 
+	}
+
+	public void closeWelcome() {
+		sleep(500);
+		List<WebElement>closeBtn =driver.findElements(By.cssSelector("[class=\"btn btn-close\"]"));
+		for (WebElement btn : closeBtn) {
+			if (btn.isDisplayed() && btn.isEnabled()) {
+				waitingToElement(btn);
+				clickSafe(btn);
+				waitingToElementDisappear(btn);
+				break;
+			}
+		}
+
+		List<WebElement> overlays = driver.findElements(By.cssSelector(".background-overlay"));
+		if (!overlays.isEmpty() && overlays.get(0).isDisplayed()) {
+			try {
+				sleep(200);
+				waitForInvisibility(By.cssSelector(".background-overlay"));
+				System.out.println("Overlay disappeared successfully.");
+			} catch (org.openqa.selenium.TimeoutException e) {
+				System.out.println("Overlay did not disappear in time, retrying...");
+				try {
+					Thread.sleep(500);
+					waitForInvisibility(By.cssSelector(".background-overlay"));
+				} catch (Exception ex) {
+					System.out.println("Still not disappeared, proceed carefully");
+				}
+			}
+		   
+		} 
+	
+		
 	}
 
 	// A method that waits for the appearance of the welcome text
@@ -68,25 +91,12 @@ public class MenuToolBar extends BasePage {
 
 	// A method that returns the welcome text
 	public String getWelcomeUser() {
-		sleep(1000);
+		if (!WelcomeUser.isDisplayed()) {
+			sleep(200);
+			
+		}
+		waitingToElement(WelcomeUser);
 		return getText(WelcomeUser);
-	}
-
-
-	// A method for safely clicking a button hidden by an advertisement
-	public void clickSafe(WebElement el) {
-		try {
-			skipAds();
-		} catch (Exception e) {
-		}
-
-		try {
-			waitingToElement(el);
-			highlightElement(el, "black", "orange");
-			((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
-		} catch (Exception e) {
-			System.out.println("Unable to click on this element");
-		}
 	}
 
 	// A method that collects the items from the basket and groups them into a list
@@ -114,6 +124,13 @@ public class MenuToolBar extends BasePage {
 		}
 
 		return list;
+	}
+
+	public boolean isCartCorrect(String... items) throws InterruptedException {
+		Thread.sleep(1000);
+		List<String> expectedItems = itemsToList(items);
+		List<String> actualItems = getCartItemNames();
+		return actualItems.containsAll(expectedItems) && expectedItems.containsAll(actualItems);
 	}
 
 }

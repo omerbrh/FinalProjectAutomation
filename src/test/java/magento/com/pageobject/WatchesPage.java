@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class WatchesPage extends GearPage {
 
-	@FindBy(css = "#ui-id-27")
+	@FindBy(css = "#ui-id-24")
 	protected WebElement Watchesbtn;
 	
 	private boolean isWatch;

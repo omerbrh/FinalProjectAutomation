@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class MenHoodiesPage extends MenJacketsPage {
 
 	// Hoodies buttons
-	@FindBy(css = "#ui-id-20 > span")
+	@FindBy(css = "#ui-id-15")
 	protected WebElement Hoodiesbtn;
 
 	// Hoodies local Variables

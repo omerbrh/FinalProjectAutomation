@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class BagsPage extends GearPage {
 
-	@FindBy(css = "#ui-id-25")
+	@FindBy(css = "#ui-id-22")
 	protected WebElement Bugsbtn;
 
 	// Bags local Variables

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-24T09:49:44 IDT" name="MyFinalProject Suite" finished-at="2025-09-24T09:59:51 IDT" duration-ms="607511">
+    <groups>
+    </groups>
+    <test started-at="2025-09-24T09:49:44 IDT" name="All Tests" finished-at="2025-09-24T09:59:51 IDT" duration-ms="607511">
+      <class name="magento.com.tests.BuyingMensClothesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:52:13 IDT" name="setup" finished-at="2025-09-24T09:52:18 IDT" duration-ms="4201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_06_buyMenJacket()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:52:18 IDT" name="tc_06_buyMenJacket" finished-at="2025-09-24T09:52:48 IDT" duration-ms="30132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_06_buyMenJacket -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:52:48 IDT" name="tearDown" finished-at="2025-09-24T09:52:48 IDT" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:52:48 IDT" name="setup" finished-at="2025-09-24T09:52:52 IDT" duration-ms="4126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_07_buyMenHoodies()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:52:52 IDT" name="tc_07_buyMenHoodies" finished-at="2025-09-24T09:53:23 IDT" duration-ms="30673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_07_buyMenHoodies -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:53:23 IDT" name="tearDown" finished-at="2025-09-24T09:53:23 IDT" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:53:23 IDT" name="setup" finished-at="2025-09-24T09:53:27 IDT" duration-ms="4216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_08_buyMenTees()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:53:27 IDT" name="tc_08_buyMenTees" finished-at="2025-09-24T09:53:57 IDT" duration-ms="29703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_08_buyMenTees -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:53:57 IDT" name="tearDown" finished-at="2025-09-24T09:53:57 IDT" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:53:57 IDT" name="setup" finished-at="2025-09-24T09:54:02 IDT" duration-ms="4328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_09_buyMenTanks()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:54:02 IDT" name="tc_09_buyMenTanks" finished-at="2025-09-24T09:54:31 IDT" duration-ms="29676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_09_buyMenTanks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:54:31 IDT" name="tearDown" finished-at="2025-09-24T09:54:32 IDT" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:54:32 IDT" name="setup" finished-at="2025-09-24T09:54:36 IDT" duration-ms="4143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_10_buyMenPants()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:54:36 IDT" name="tc_10_buyMenPants" finished-at="2025-09-24T09:55:06 IDT" duration-ms="30792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_10_buyMenPants -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:55:06 IDT" name="tearDown" finished-at="2025-09-24T09:55:07 IDT" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:55:07 IDT" name="setup" finished-at="2025-09-24T09:55:11 IDT" duration-ms="4036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_11_buyMenShorts()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:55:11 IDT" name="tc_11_buyMenShorts" finished-at="2025-09-24T09:55:41 IDT" duration-ms="29959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_11_buyMenShorts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingMensClothesTest@58860997]" started-at="2025-09-24T09:55:41 IDT" name="tearDown" finished-at="2025-09-24T09:55:41 IDT" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- magento.com.tests.BuyingMensClothesTest -->
+      <class name="magento.com.tests.AddToCartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:49:44 IDT" name="setup" finished-at="2025-09-24T09:49:50 IDT" duration-ms="6530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_18_AddingSeveralItemsToCartTest()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:49:51 IDT" name="tc_18_AddingSeveralItemsToCartTest" finished-at="2025-09-24T09:50:21 IDT" duration-ms="30026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_18_AddingSeveralItemsToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:50:21 IDT" name="tearDown" finished-at="2025-09-24T09:50:21 IDT" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:50:21 IDT" name="setup" finished-at="2025-09-24T09:50:25 IDT" duration-ms="4571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_19_EditingItemsNumbers()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:50:25 IDT" name="tc_19_EditingItemsNumbers" finished-at="2025-09-24T09:51:17 IDT" duration-ms="51859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_19_EditingItemsNumbers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:51:17 IDT" name="tearDown" finished-at="2025-09-24T09:51:18 IDT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:51:18 IDT" name="setup" finished-at="2025-09-24T09:51:22 IDT" duration-ms="4034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_20_deletingItemsFromTheCart()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:51:22 IDT" name="tc_20_deletingItemsFromTheCart" finished-at="2025-09-24T09:52:13 IDT" duration-ms="51719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_20_deletingItemsFromTheCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.AddToCartTest@11b455e5]" started-at="2025-09-24T09:52:13 IDT" name="tearDown" finished-at="2025-09-24T09:52:13 IDT" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- magento.com.tests.AddToCartTest -->
+      <class name="magento.com.tests.BuyingWomenClothesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:55:41 IDT" name="setup" finished-at="2025-09-24T09:55:45 IDT" duration-ms="4216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_12_buyWomenJacket()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:55:45 IDT" name="tc_12_buyWomenJacket" finished-at="2025-09-24T09:56:15 IDT" duration-ms="29543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_12_buyWomenJacket -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:56:15 IDT" name="tearDown" finished-at="2025-09-24T09:56:15 IDT" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:56:15 IDT" name="setup" finished-at="2025-09-24T09:56:19 IDT" duration-ms="4226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_13_buyWomenHoodies()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:56:19 IDT" name="tc_13_buyWomenHoodies" finished-at="2025-09-24T09:56:49 IDT" duration-ms="29407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_13_buyWomenHoodies -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:56:49 IDT" name="tearDown" finished-at="2025-09-24T09:56:49 IDT" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:56:49 IDT" name="setup" finished-at="2025-09-24T09:56:53 IDT" duration-ms="4063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_14_buyWomentees()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:56:53 IDT" name="tc_14_buyWomentees" finished-at="2025-09-24T09:57:24 IDT" duration-ms="31135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_14_buyWomentees -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:57:24 IDT" name="tearDown" finished-at="2025-09-24T09:57:24 IDT" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:57:24 IDT" name="setup" finished-at="2025-09-24T09:57:29 IDT" duration-ms="4347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_15_buyWomenBras()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:57:29 IDT" name="tc_15_buyWomenBras" finished-at="2025-09-24T09:57:59 IDT" duration-ms="30370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_15_buyWomenBras -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:57:59 IDT" name="tearDown" finished-at="2025-09-24T09:57:59 IDT" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:57:59 IDT" name="setup" finished-at="2025-09-24T09:58:03 IDT" duration-ms="4196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_16_buyWomenPants()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:58:03 IDT" name="tc_16_buyWomenPants" finished-at="2025-09-24T09:58:34 IDT" duration-ms="30283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_16_buyWomenPants -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:58:34 IDT" name="tearDown" finished-at="2025-09-24T09:58:34 IDT" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:58:34 IDT" name="setup" finished-at="2025-09-24T09:58:38 IDT" duration-ms="4116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc_17_buyWomenShorts()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:58:38 IDT" name="tc_17_buyWomenShorts" finished-at="2025-09-24T09:59:09 IDT" duration-ms="30853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_17_buyWomenShorts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.BuyingWomenClothesTest@81b5db0]" started-at="2025-09-24T09:59:09 IDT" name="tearDown" finished-at="2025-09-24T09:59:09 IDT" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- magento.com.tests.BuyingWomenClothesTest -->
+      <class name="magento.com.tests.SignInTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:09 IDT" name="setup" finished-at="2025-09-24T09:59:13 IDT" duration-ms="4056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc01_loginFailed(java.lang.String,java.lang.String)[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:13 IDT" name="tc01_loginFailed" description="use incorect login information" data-provider="getData" finished-at="2025-09-24T09:59:19 IDT" duration-ms="5478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[omerbrh81@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_loginFailed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:19 IDT" name="tearDown" finished-at="2025-09-24T09:59:19 IDT" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:19 IDT" name="setup" finished-at="2025-09-24T09:59:23 IDT" duration-ms="4050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc02_invalidEmail()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:23 IDT" name="tc02_invalidEmail" finished-at="2025-09-24T09:59:26 IDT" duration-ms="2776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_invalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:26 IDT" name="tearDown" finished-at="2025-09-24T09:59:26 IDT" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:26 IDT" name="setup" finished-at="2025-09-24T09:59:30 IDT" duration-ms="4024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc03_emptyEmailField()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:30 IDT" name="tc03_emptyEmailField" finished-at="2025-09-24T09:59:33 IDT" duration-ms="2807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_emptyEmailField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:33 IDT" name="tearDown" finished-at="2025-09-24T09:59:33 IDT" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:33 IDT" name="setup" finished-at="2025-09-24T09:59:37 IDT" duration-ms="4272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc04_emptyPasswordField()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:37 IDT" name="tc04_emptyPasswordField" finished-at="2025-09-24T09:59:40 IDT" duration-ms="2936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_emptyPasswordField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:40 IDT" name="tearDown" finished-at="2025-09-24T09:59:40 IDT" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:40 IDT" name="setup" finished-at="2025-09-24T09:59:45 IDT" duration-ms="4273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc05_validLogin()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:45 IDT" name="tc05_validLogin" finished-at="2025-09-24T09:59:51 IDT" duration-ms="6302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_validLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:magento.com.tests.SignInTest@7487b142]" started-at="2025-09-24T09:59:51 IDT" name="tearDown" finished-at="2025-09-24T09:59:51 IDT" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- magento.com.tests.SignInTest -->
+    </test> <!-- All Tests -->
+  </suite> <!-- MyFinalProject Suite -->
+</testng-results>

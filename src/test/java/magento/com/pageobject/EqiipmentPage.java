@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class EqiipmentPage extends GearPage {
-	@FindBy(css = "#ui-id-26")
+	@FindBy(css = "#ui-id-23")
 	protected WebElement equipmentbtn;
 	@FindBy(css = "[class=\"fotorama__img\"]")
 	protected WebElement ballImg;

@@ -15,32 +15,32 @@ public class MenPage extends MenuToolBar {
 	protected List<WebElement> itemlistForPage;
 
 	// Size lists
-	@FindBy(css = "#option-label-size-143-item-166")
+	@FindBy(css = "#option-label-size-144-item-166")
 	protected List<WebElement> XSlist;
-	@FindBy(css = "#option-label-size-143-item-167")
+	@FindBy(css = "#option-label-size-144-item-167")
 	protected List<WebElement> Slist;
-	@FindBy(css = "#option-label-size-143-item-168")
+	@FindBy(css = "#option-label-size-144-item-168")
 	protected List<WebElement> Mlist;
-	@FindBy(css = "#option-label-size-143-item-169")
+	@FindBy(css = "#option-label-size-144-item-169")
 	protected List<WebElement> Llist;
-	@FindBy(css = "#option-label-size-143-item-170")
+	@FindBy(css = "#option-label-size-144-item-170")
 	protected List<WebElement> XLlist;
 
-	@FindBy(css = "#option-label-size-143-item-171")
+	@FindBy(css = "#option-label-size-144-item-171")
 	protected List<WebElement> list28;
-	@FindBy(css = "#option-label-size-143-item-172")
+	@FindBy(css = "#option-label-size-144-item-172")
 	protected List<WebElement> list29;
-	@FindBy(css = "#option-label-size-143-item-173")
+	@FindBy(css = "#option-label-size-144-item-173")
 	protected List<WebElement> list30;
-	@FindBy(css = "#option-label-size-143-item-174")
+	@FindBy(css = "#option-label-size-144-item-174")
 	protected List<WebElement> list31;
-	@FindBy(css = "#option-label-size-143-item-175")
+	@FindBy(css = "#option-label-size-144-item-175")
 	protected List<WebElement> list32;
-	@FindBy(css = "#option-label-size-143-item-176")
+	@FindBy(css = "#option-label-size-144-item-176")
 	protected List<WebElement> list33;
-	@FindBy(css = "#option-label-size-143-item-177")
+	@FindBy(css = "#option-label-size-144-item-177")
 	protected List<WebElement> list34;
-	@FindBy(css = "#option-label-size-143-item-178")
+	@FindBy(css = "#option-label-size-144-item-178")
 	protected List<WebElement> list36;
 	protected String itemSize;
 	protected boolean isSize = true;
@@ -82,7 +82,7 @@ public class MenPage extends MenuToolBar {
 	protected boolean iscolor;
 
 	// other buttons
-	@FindBy(css = "[title=\"Add to Cart\"]")
+	@FindBy(css = "[data-role=\"addToCartButton\"]")
 	protected List<WebElement> AddToCartlist;
 	@FindBy(css = " form > button > span")
 	protected List<WebElement> addToCartPage2;
@@ -105,8 +105,7 @@ public class MenPage extends MenuToolBar {
 		if (isMen) {
 			waitingToElement(Menbtn);
 			hoverTopMenu(Menbtn);
-			waitingToElement(MensMarker);
-			moveto(MensMarker);
+
 
 			if (isTOP) {
 				waitingToElement(Topsbtn);
@@ -118,8 +117,8 @@ public class MenPage extends MenuToolBar {
 
 		} else {
 
-			waitingToElement(Womanbtn);
-			hoverTopMenu(Womanbtn);
+			waitingToElement(Womenbtn);
+			hoverTopMenu(Womenbtn);
 
 			if (isTOP) {
 				waitingToElement(WomenTopbtn);
@@ -223,7 +222,7 @@ public class MenPage extends MenuToolBar {
 
 		if (sizes.size() > i) {
 			waitingToElement(sizes.get(i));
-			clickSafe(sizes.get(i));
+			click(sizes.get(i));
 
 		} else {
 			System.out.println("This size didnt exist for this item");
@@ -250,21 +249,21 @@ public class MenPage extends MenuToolBar {
 				itemcolor = firstOptionColor;
 				System.out.println("You have selected an item in color " + itemcolor);
 				waitingToElement(firstColorBtn);
-				clickSafe(firstColorBtn);
+				click(firstColorBtn);
 
 			} else if (secondOptionColor.equals(pickColor) && secondColorBtn != null) {
 				iscolor = true;
 				itemcolor = secondOptionColor;
 				System.out.println("You have selected an item in color " + itemcolor);
 				waitingToElement(secondColorBtn);
-				clickSafe(secondColorBtn);
+				click(secondColorBtn);
 
 			} else if (thirdOptionColor.equals(pickColor) && thirdColorBtn != null) {
 				iscolor = true;
 				itemcolor = thirdOptionColor;
 				System.out.println("You have selected an item in color " + itemcolor);
 				waitingToElement(thirdColorBtn);
-				clickSafe(thirdColorBtn);
+				click(thirdColorBtn);
 
 			} else {
 				iscolor = false;
@@ -288,13 +287,13 @@ public class MenPage extends MenuToolBar {
 				sleep(500);
 				waitingToElement(pageItemList.get(i));
 				moveto(pageItemList.get(i));
-				clickSafe(AddToCartlist.get(i));
+				click(AddToCartlist.get(i));
 
 			} else {
 				sleep(500);
 				waitingToElement(pageItemList.get(i));
 				moveto(pageItemList.get(i));
-				clickSafe(addToCartPage2.get(i));
+				click(addToCartPage2.get(i));
 
 			}
 

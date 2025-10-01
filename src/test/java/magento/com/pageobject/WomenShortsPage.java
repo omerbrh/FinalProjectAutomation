@@ -13,7 +13,7 @@ public class WomenShortsPage extends WomenPage {
 	private String WSitem;
 	private int position;
 
-	@FindBy(css = "#ui-id-16")
+	@FindBy(css = "#ui-id-11")
 	protected WebElement Wshortsbtn;
 	protected static final String INVALID_Size = "none";
 

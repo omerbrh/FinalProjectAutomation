@@ -13,7 +13,7 @@ public class WomenBrasPage extends MenPage {
 	private String Britem;
 	private int position;
 
-	@FindBy(css = "#ui-id-14")
+	@FindBy(css = "#ui-id-8")
 	protected WebElement Brastbtn;
 
 	// Page 2 elements

@@ -8,18 +8,27 @@ public class CheckoutPage extends MenuToolBar {
 	// Information fields
 	@FindBy(css = "[class=\"control _with-tooltip\"]>#customer-email")
 	private WebElement EmailField;
-	@FindBy(css = "#customer-password")
-	private WebElement PasswordField;
+	@FindBy(css = "[name=\"firstname\"]")
+	private WebElement firstNameField;
+	@FindBy(css = "[name=\"lastname\"]")
+	private WebElement lastNameField;
+	@FindBy(css = "[name=\"street[0]\"]")
+	private WebElement streetAddressField;
+	@FindBy(css = "[name=\"country_id\"]")
+	private WebElement countryBtn;
+	@FindBy(css = "[name=\"city\"]")
+	private WebElement cityField;
+	@FindBy(css = "[name=\"postcode\"]")
+	private WebElement postCodeField;
+	@FindBy(css = "[name=\"telephone\"]")
+	private WebElement phoneField;
 
-	// Buttons
-	@FindBy(css = "#customer-email-fieldset > fieldset > div.actions-toolbar > div.primary > button > span")
-	private WebElement Loginbtn;
 
 	// Shipping Methods
 	@FindBy(css = "#opc-shipping_method > div")
 	private WebElement ShippingMethodsFields;
 
-	@FindBy(css = "[class=\"col col-method\"]>[name=\"ko_unique_2\"]")
+	@FindBy(css = "[type=\"radio\"]")
 	private WebElement Fixedbtn;
 
 	@FindBy(css = "[class=\"col col-method\"]>[name=\"ko_unique_1\"]")
@@ -36,12 +45,19 @@ public class CheckoutPage extends MenuToolBar {
 
 	}
 
-	public void FillShippingInfo(String email, String password, String ShippingMethod) {
+	public void FillShippingInfo(String email, String firstName, String lastName, String street, String country,
+			String city,String postCode,String phone, String ShippingMethod) {
 		waitingToElement(EmailField);
 		fillText(EmailField, email);
-		waitingToElement(PasswordField);
-		fillText(PasswordField, password);
-		click(Loginbtn);
+		waitingToElement(firstNameField);
+		fillText(firstNameField, firstName);
+		fillText(lastNameField, lastName);
+		fillText(streetAddressField, street);
+		click(countryBtn);
+		selectByValue(countryBtn, country);
+		fillText(cityField, city);
+		fillText(postCodeField, postCode);
+		fillText(phoneField, phone);
 		waitingToElement(ShippingMethodsFields);
 		waitingToElementDisappear(loading);
 		if (ShippingMethod.equalsIgnoreCase("Fixed")) {
@@ -57,6 +73,7 @@ public class CheckoutPage extends MenuToolBar {
 			System.out.println("You must choose between Fixed to Table Rate");
 
 		}
+		waitingToElement(Nextbtn);
 		click(Nextbtn);
 
 	}

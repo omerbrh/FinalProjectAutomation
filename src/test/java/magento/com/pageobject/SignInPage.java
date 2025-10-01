@@ -13,7 +13,7 @@ public class SignInPage extends MenuToolBar {
 // Error Messages 
 	protected @FindBy(css = "#maincontent > div.page.messages ") WebElement incorrectAcountM;
 	protected @FindBy(css = "#email-error") WebElement invalidEmailM;
-	protected @FindBy(css = "#pass-error") WebElement invalidPasswordM;
+	protected @FindBy(css = "#password-error") WebElement invalidPasswordM;
 
 	public SignInPage(WebDriver driver) {
 		super(driver);

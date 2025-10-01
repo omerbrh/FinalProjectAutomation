@@ -28,16 +28,16 @@ public class GearPage extends MenPage {
 	public void AddGear(boolean isItem, boolean page2, List<WebElement> pageItemList, int i) {
 
 		if (isItem) {
-			sleep(500);
+			sleep(200);
 			beforeCount = cartNumOfItem();
 
 			if (!page2) {
 				waitingToElement(AddToCartlist.get(i));
-				 clickSafe(AddToCartlist.get(i));
+				 click(AddToCartlist.get(i));
 				
 			} else {
 				waitingToElement(addToCartPage2.get(i));
-				 clickSafe(addToCartPage2.get(i));
+				 click(addToCartPage2.get(i));
 			}
 
 			afterCount = cartNumOfItem();

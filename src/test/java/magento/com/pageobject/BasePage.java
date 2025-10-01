@@ -37,7 +37,6 @@ abstract class BasePage {
 
 	// A method that clicks on an element
 	public void click(WebElement el) {
-		skipAds();
 		highlightElement(el, "black", "orange");
 		el.click();
 	}
@@ -171,5 +170,26 @@ abstract class BasePage {
 			Thread.currentThread().interrupt();
 		}
 	}
+	
+	public void waitForInvisibility(By locator) {
+	    wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+	}
+	
+	// A method for safely clicking a button hidden by an advertisement
+	public void clickSafe(WebElement el) {
+		try {
+			skipAds();
+		} catch (Exception e) {
+		}
+
+		try {
+			waitingToElement(el);
+			highlightElement(el, "black", "orange");
+			((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
+		} catch (Exception e) {
+			System.out.println("Unable to click on this element");
+		}
+	}
+
 
 }

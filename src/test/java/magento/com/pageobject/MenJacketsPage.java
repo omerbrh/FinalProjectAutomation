@@ -1,8 +1,15 @@
 package magento.com.pageobject;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class MenJacketsPage extends MenPage {
+
+	@FindBy(css = "#ui-id-14")
+	protected WebElement Jacketsbtn;
 
 	// Jackets local Variables
 	private boolean isJacket = false;

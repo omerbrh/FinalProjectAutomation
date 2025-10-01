@@ -6,10 +6,12 @@ import org.openqa.selenium.support.FindBy;
 
 public class PaymentsPage extends MenuToolBar {
 
-	@FindBy(css = "#checkout-payment-method-load > div > div > div.payment-method._active > div.payment-method-content > div.actions-toolbar > div > button > span")
-	WebElement PlaceOrderbtn;
+	@FindBy(css = "[name=\"payment[method]\"]")
+	private WebElement checkrbtn;
+	@FindBy(css = "[class=\"action primary checkout\"]")
+	private WebElement placeOrderbtn;
 	@FindBy(css = "[alt=\"Loading...\"]")
-	WebElement Loading;
+	private WebElement Loading;
 
 	public PaymentsPage(WebDriver driver) {
 		super(driver);
@@ -18,9 +20,11 @@ public class PaymentsPage extends MenuToolBar {
 
 	// A method that clicks on the PLACR ORDER button
 	public void clickPlaceOrder() {
+		waitingToElement(checkrbtn);
+		click(checkrbtn);
 		waitingToElement(Loading);
 		waitingToElementDisappear(Loading);
-		click(PlaceOrderbtn);
+		click(placeOrderbtn);
 	}
 
 }

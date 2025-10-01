@@ -13,7 +13,7 @@ public class WomenPantsPage extends MenPage {
 	private String Wpitem;
 	private int position;
 
-	@FindBy(css = "#ui-id-15")
+	@FindBy(css = "#ui-id-10")
 	protected WebElement Wpantsbtn;
 
 	public WomenPantsPage(WebDriver driver) {
