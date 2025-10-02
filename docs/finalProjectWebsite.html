@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Omer Bracha - QA and Automation Engineer | Final Project</title>
+  <meta name="description" content="Final project: automated test suite for LUMA demo shopping site (20 E2E tests) by Omer Bracha">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Prism.js theme for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css">
+  <meta name="title" content="Omer Bracha - QA Automation Portfolio">
+<meta name="description" content="QA Automation Engineer specializing in Selenium, Java, TestNG, Allure, and CI/CD pipelines. Explore my projects, test automation, and professional journey.">
+<meta name="keywords" content="QA, Automation, Selenium, Java, TestNG, Allure, Jenkins, Portfolio, Omer Bracha">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Omer Bracha">
+
+</head>
+
+<body class="theme-sport">
+
+<header>
+  <div class="nav-inner container">
+    <div class="brand">
+      <!-- site icon (LUMA) - transparent background, sized by CSS -->
+      <img id="siteIcon" src="pictures/luma-icon.jpg" alt="Site icon (LUMA)" />
+      <h1 id="siteTitle">Omer Bracha - QA and Automation Engineer</h1>
+    </div>
+
+    <nav aria-label="Main Navigation" class="main-nav">
+      <!-- pill buttons (keeps same anchors & hrefs) -->
+      <a class="nav-pill" href="#project">Project</a>
+      <a class="nav-pill" href="#tests">Tests</a>
+      <a class="nav-pill" href="#reports">Reports</a>
+      <a class="nav-pill" href="#contact">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+
+<button id="theme-toggle" class="nav-pill" aria-label="Toggle theme" title="Toggle Dark / Light">🌙</button>
+
+  </div>
+</header>
+
+<!-- Overlay menu for mobile -->
+<div id="overlayMenu" class="overlay" aria-hidden="true">
+  <button id="closeOverlay" class="overlay-close" aria-label="Close menu">✕</button>
+  <nav class="overlay-nav">
+    <a href="#project" class="overlay-link">Project</a>
+    <a href="#tests" class="overlay-link">Tests</a>
+    <a href="#reports" class="overlay-link">Reports</a>
+    <a href="#contact" class="overlay-link">Contact</a>
+  </nav>
+</div>
+
+<main>
+
+  <!-- HERO / PROJECT (top) -->
+  <section id="project" class="hero container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="badge">Final Project</span>
+        <h2 class="title">Automated E2E Test Suite for a LUMA Demo Shop</h2>
+        <p class="lead">
+          This project includes a suite of <strong>20 automated end-to-end tests</strong> for an e-commerce demo site
+          (clothing, accessories, sports equipment). Tests were implemented using Selenium (Java), TestNG &amp; Page Object Model.
+
+        </p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="Omer Bracha CV -2025.pdf" download target="_blank" rel="noopener noreferrer">Download CV Hebrew</a>
+          <a class="btn btn-primary" href="Omer_Bracha_CV_EN_2025.pdf" download target="_blank" rel="noopener noreferrer">Download CV English</a>
+          <button class="btn btn-outline" onclick="document.getElementById('tests').scrollIntoView({behavior:'smooth'})">View Tests</button>
+        </div>
+
+        <div class="stats" aria-hidden="false">
+          <div class="stat stat--tests">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="2" width="6" height="4" rx="1"></rect>
+                <path d="M9 3H6a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-3"></path>
+                <path d="M8 9h8M8 13h8M8 17h5"></path>
+              </svg>
+            </span>
+            <div class="num">0</div>
+            <div class="muted">Automated tests</div>
+          </div>
+
+          <div class="stat stat--pass">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <path d="M22 4 12 14.01l-3-3"></path>
+              </svg>
+            </span>
+            <div class="num">0</div>
+            <!-- progress bar added (visual) -->
+            <div class="progress" aria-hidden="true">
+              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+            <div class="muted">Pass rate</div>
+          </div>
+
+          <div class="stat stat--runtime">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </span>
+            <div class="num">0</div>
+            <div class="muted">Avg runtime</div>
+          </div>
+
+          <div class="stat stat--solo">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h9"></path>
+                <path d="M12 4H3"></path>
+                <path d="M12 12h9"></path>
+                <path d="M12 8H3"></path>
+                <path d="M12 16H3"></path>
+              </svg>
+            </span>
+            <div class="num">Solo</div>
+            <div class="muted">Project</div>
+          </div>
+
+          <div class="stat stat--web">
+            <span class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M2 12h20"></path>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </span>
+            <div class="num">Web</div>
+            <div class="muted">Tests</div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="hero-right">
+      </aside>
+    </div>
+  </section>
+
+  <!-- TESTS SECTION -->
+  <section id="tests" class="container">
+    <div class="section-title" style="gap:10px; align-items:center;">
+      <h3>Automated Tests</h3>
+      <p class="small">20 end-to-end automated tests for the Magento demo shopping site — each group expands to show a description, optional demo video and code snippets.</p>
+
+      <!-- Controls: Open All / Collapse All -->
+      <div class="tests-controls" style="margin-top:6px;">
+        <button class="btn btn-outline" id="openAllBtn">Open All</button>
+        <button class="btn btn-outline" id="collapseAllBtn">Collapse All</button>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordion">
+
+      <!-- GROUP 1: Authentication (Tests 01-05) -->
+      <div class="acc-item">
+        <div class="acc-head"><div class="acc-title"><span class="acc-arrow">▶</span> <span class="acc-count">01–05</span> Authentication</div><div class="muted">User Authentication tests</div></div>
+        <div class="acc-body">
+          <p><strong>Summary:</strong> Validate login functionality with positive and negative scenarios (invalid credentials, invalid email, empty fields).</p>
+		  
+		   <!-- Lazy video - sign in -->
+          <div class="video-container" style="margin-bottom:12px;">
+            <video controls preload="none" playsinline class="demo-video" data-src="videos/SignIn-tests.mp4" aria-label="sign-in demo video">
+              <source src="videos/SignIn-tests.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="video-desc small" style="margin-top:6px;">Demo: sign-in tests </p>
+          </div>
+
+          <div class="test-case positive">
+            <h4>✅ Positive Test — Valid Login</h4>
+            <p>Verify user can log in with valid email and password.</p>
+            <pre><code class="language-java">
+@Test
+	@Feature("User Authentication")
+	@Story("Sign in with valid credentials")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test signs in with correct credentials and verifies that the welcome message is displayed.")
+	public void tc05_validLogin() {
+		SignInPage sip = new SignInPage(driver);
+		sip.SignIn("omerbrh81@gmail.com", "Omer1234567!");
+		sip.watingToWelcome();
+		takeScreenshot();
+		Assert.assertEquals(sip.getWelcomeUser(), "Welcome, omer BRACHA!");
+
+	}
+
+            </code></pre>
+          </div>
+
+          <div class="test-case negative">
+            <h4>❌ Negative Test — Incorrect Credentials (data-driven)</h4>
+            <p>Verify error message appears for wrong email/password combinations (DataProvider).</p>
+            <pre><code class="language-java">
+@Test(dataProvider = "getData", description = "use incorect login information")
+	@Feature("User Authentication")
+	@Story("Attempt login with incorrect credentials")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test attempts to sign in with incorrect credentials and verifies that the appropriate error message is displayed.")
+	public void tc01_loginFailed(String email, String password) {
+		SignInPage sip = new SignInPage(driver);
+		sip.SignIn(email, password);
+		Assert.assertEquals(sip.getIncorrectAcountM(),
+				"The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.");
+		takeScreenshot();
+
+	}
+
+	@DataProvider
+	public Object[][] getData() {
+		Object[][] myData = { { "omerbrh81@gmail.com", "1234567" }
+
+		};
+		return myData;
+	}
+            </code></pre>
+          </div>
+
+          <div class="test-case negative">
+            <h4>❌ Negative Test — Invalid Email Format</h4>
+            <p>Verify validation message when entering an invalid email format.</p>
+            <pre><code class="language-java">
+@Test
+	@Feature("User Authentication")
+	@Story("Sign in with invalid email format")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test enters an invalid email format during sign-in and verifies that the system shows the correct validation message.")
+	public void tc02_invalidEmail() {
+		SignInPage sip = new SignInPage(driver);
+		sip.SignIn("omerbrh.gmail.com", "ob260494Q");
+		takeScreenshot();
+		Assert.assertEquals(sip.getInvalidEmailM(), "Please enter a valid email address (Ex: johndoe@domain.com).");
+	}
+            </code></pre>
+          </div>
+
+          <div class="test-case negative">
+            <h4>❌ Negative Test — Empty Fields</h4>
+            <p>Verify required field messages when email or password are empty.</p>
+            <pre><code class="language-java">
+@Test
+	@Feature("User Authentication")
+	@Story("Sign in with empty email field")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test leaves the email field empty during sign-in and verifies that the required field error appears.")
+	public void tc03_emptyEmailField() {
+		SignInPage sip = new SignInPage(driver);
+		sip.SignIn("", "ob123456");
+		takeScreenshot();
+		Assert.assertEquals(sip.getInvalidEmailM(), "This is a required field.");
+
+	}
+
+	@Test
+	@Feature("User Authentication")
+	@Story("Sign in with empty password field")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test leaves the password field empty and verifies that the required field error message is displayed.")
+	public void tc04_emptyPasswordField() {
+		SignInPage sip = new SignInPage(driver);
+		sip.SignIn("omerbrh81@gmail.com", "");
+		takeScreenshot();
+		Assert.assertEquals(sip.getInvalidPasswordM(), "This is a required field.");
+
+	}
+
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 2: Men's Clothing (Tests 06-11) -->
+      <div class="acc-item">
+        <div class="acc-head"><div class="acc-title"><span class="acc-arrow">▶</span> <span class="acc-count">06–11</span> Men's Clothing</div><div class="muted">Men's Clothing tests</div></div>
+        <div class="acc-body">
+          <p><strong>Summary:</strong> Select men's clothing items and complete checkout flows (jacket, hoodie, tees, tank, pants, shorts).</p>
+
+          <!-- Lazy video - men's clothing -->
+          <div class="video-container" style="margin-bottom:12px;">
+            <video controls preload="none" playsinline class="demo-video" data-src="videos/mens-clothing-tests.mp4" aria-label="Men's clothing demo video">
+              <source src="videos/mens-clothing-tests.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="video-desc small" style="margin-top:6px;">Demo: Men's clothing purchase tests (short walkthrough)</p>
+          </div>
+
+          <!-- TEST 06 -->
+          <div class="test-case positive">
+            <h4>✅ tc_06_buyMenJacket</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Men's Clothing")
+	@Story("Buy a Men's Jacket and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a man: a jacket, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_06_buyMenJacket() {
+		MenJacketsPage mjp = new MenJacketsPage(driver);
+		mjp.buyMenJackets("Hyperion Elements Jacket", "s", "red");
+		takeScreenshot();
+		mjp.goToCartPage(false);
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), mjp.getJitem());
+		Assert.assertEquals(cp.getItemColor(), mjp.getJcolor());
+		Assert.assertEquals(cp.getItemSize(), mjp.getJsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 07 -->
+          <div class="test-case positive">
+            <h4>✅ tc_07_buyMenHoodies</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Men's Clothing")
+	@Story("Buy a Men's Hoodie and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a man: a Hoodie, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_07_buyMenHoodies() {
+		MenHoodiesPage mhp = new MenHoodiesPage(driver);
+		mhp.buyMenHoodies("Frankie Sweatshirt", "XS", "GREEN");
+		mhp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), mhp.getHitem());
+		Assert.assertEquals(cp.getItemColor(), mhp.getHcolor());
+		Assert.assertEquals(cp.getItemSize(), mhp.getHsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+	}
+
+            </code></pre>
+          </div>
+
+          <!-- TEST 08 -->
+          <div class="test-case positive">
+            <h4>✅ tc_08_buyMenTees</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Men's Clothing")
+	@Story("Buy a Men's Tee and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a man: a Tee, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_08_buyMenTees() {
+		MenTeesPage mtp = new MenTeesPage(driver);
+		mtp.buyMenTees("Zoltan Gym Tee", "l", "green");
+		mtp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), mtp.getTitem());
+		Assert.assertEquals(cp.getItemColor(), mtp.getTcolor());
+		Assert.assertEquals(cp.getItemSize(), mtp.getTsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 09 -->
+          <div class="test-case positive">
+            <h4>✅ tc_09_buyMenTanks</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Men's Clothing")
+	@Story("Buy a Men's Tank and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a man: a Tank, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_09_buyMenTanks() {
+		MenTanksPage mtap = new MenTanksPage(driver);
+		mtap.buyManTanks("Tristan Endurance Tank", "L", "white");
+		mtap.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), mtap.getTaitem());
+		Assert.assertEquals(cp.getItemColor(), mtap.getTacolor());
+		Assert.assertEquals(cp.getItemSize(), mtap.getTasize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 10 -->
+          <div class="test-case positive">
+            <h4>✅ tc_10_buyMenPants</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Men's Clothing")
+	@Story("Buy a Men's Pants and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a man: a Pants, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_10_buyMenPants() {
+		MenPantsPage mpp = new MenPantsPage(driver);
+		mpp.buyMenPants("Caesar Warm-Up Pant", "36", "purple");
+		mpp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), mpp.getPitem());
+		Assert.assertEquals(cp.getItemColor(), mpp.getPcolor());
+		Assert.assertEquals(cp.getItemSize(), mpp.getPsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 11 -->
+          <div class="test-case positive">
+            <h4>✅ tc_11_buyMenShorts</h4>
+            <pre><code class="language-java">
+	@Test
+	@Feature("Men's Clothing")
+	@Story("Buy a Men's Shorts and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a man: a Shorts, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_11_buyMenShorts() {
+		MenShortsPage msp = new MenShortsPage(driver);
+		msp.buyMenShorts("Cobalt CoolTech™ Fitness Short", "34", "red");
+		msp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), msp.getSitem());
+		Assert.assertEquals(cp.getItemColor(), msp.getScolor());
+		Assert.assertEquals(cp.getItemSize(), msp.getSsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+
+	}
+
+}
+
+            </code></pre>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GROUP 3: Women's Clothing (Tests 12-17) -->
+      <div class="acc-item">
+        <div class="acc-head"><div class="acc-title"><span class="acc-arrow">▶</span> <span class="acc-count">12–17</span> Women's Clothing</div><div class="muted">Women's Clothing tests</div></div>
+        <div class="acc-body">
+          <p><strong>Summary:</strong> Select women's clothing items and complete checkout flows (jackets, hoodies, tees, bras/tanks, pants, shorts).</p>
+
+          <!-- Lazy video - women's clothing -->
+          <div class="video-container" style="margin-bottom:12px;">
+            <video controls preload="none" playsinline class="demo-video" data-src="videos/womens-clothing-tests.mp4" aria-label="Women's clothing demo video">
+              <source src="videos/womens-clothing-tests.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="video-desc small" style="margin-top:6px;">Demo: Women's clothing purchase tests (short walkthrough)</p>
+          </div>
+
+          <!-- TEST 12 -->
+          <div class="test-case positive">
+            <h4>✅ tc_12_buyWomenJacket</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Women's Clothing")
+	@Story("Buy a Women's Jacket and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a woman: a jacket, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_12_buyWomenJacket() {
+		WomenJacketsPage wjp = new WomenJacketsPage(driver);
+		wjp.buyWomenJackets("Inez Full Zip Jacket", "s", "red");
+		wjp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), wjp.getWJitem());
+		Assert.assertEquals(cp.getItemColor(), wjp.getWJcolor());
+		Assert.assertEquals(cp.getItemSize(), wjp.getWJsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 13 -->
+          <div class="test-case positive">
+            <h4>✅ tc_13_buyWomenHoodies</h4>
+            <pre><code class="language-java">
+public void tc_13_buyWomenHoodies() {
+		WomenHoodiesPage whp = new WomenHoodiesPage(driver);
+		whp.buyWomenHoodies("Phoebe Zipper Sweatshirt", "XS", "white");
+		whp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), whp.getWHitem());
+		Assert.assertEquals(cp.getItemColor(), whp.getWHcolor());
+		Assert.assertEquals(cp.getItemSize(), whp.getWHsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 14 -->
+          <div class="test-case positive">
+            <h4>✅ tc_14_buyWomenTees</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Women's Clothing")
+	@Story("Buy a Women's tee and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a woman: a tee, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_14_buyWomentees() {
+		WomenTeesPage wtp = new WomenTeesPage(driver);
+		wtp.buyWomenTees("Iris Workout Top", "l", "green");
+		wtp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), wtp.getWtitem());
+		Assert.assertEquals(cp.getItemColor(), wtp.getWtcolor());
+		Assert.assertEquals(cp.getItemSize(), wtp.getWtsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 15 -->
+          <div class="test-case positive">
+            <h4>✅ tc_15_buyWomenBras</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Women's Clothing")
+	@Story("Buy a Women's bras and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a woman: a bras, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_15_buyWomenBras() {
+		WomenBrasPage wbp = new WomenBrasPage(driver);
+		wbp.buyWomenBras("Zoe Tank", "s", "green");
+		wbp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), wbp.getBritem());
+		Assert.assertEquals(cp.getItemColor(), wbp.getBrcolor());
+		Assert.assertEquals(cp.getItemSize(), wbp.getBrsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 16 -->
+          <div class="test-case positive">
+            <h4>✅ tc_16_buyWomenPants</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Women's Clothing")
+	@Story("Buy a Women's pants and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a woman: a pants, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_16_buyWomenPants() {
+		WomenPantsPage wpp = new WomenPantsPage(driver);
+		wpp.buyWomenTees("Cora Parachute Pant", "29", "white");
+		wpp.goToCartPage(false);
+		Cartpage cp = new Cartpage(driver);
+		takeScreenshot();
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), wpp.getWpitem());
+		Assert.assertEquals(cp.getItemColor(), wpp.getWpcolor());
+		Assert.assertEquals(cp.getItemSize(), wpp.getWpsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 17 -->
+          <div class="test-case positive">
+            <h4>✅ tc_17_buyWomenShorts</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Women's Clothing")
+	@Story("Buy a Women's short and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects clothing items for a woman: a short, its size and color, verifies that the matching items were actually selected, and purchases the item.")
+	public void tc_17_buyWomenShorts() {
+		WomenShortsPage wsp = new WomenShortsPage(driver);
+		wsp.buyWomenShorts("Bess Yoga Short", "28", "yellow");
+		wsp.goToCartPage(false);
+		Cartpage cp = new Cartpage(driver);
+		cp.DoCheckout();
+		Assert.assertEquals(cp.getItemName(), wsp.getWSitem());
+		Assert.assertEquals(cp.getItemColor(), wsp.getWScolor());
+		Assert.assertEquals(cp.getItemSize(), wsp.getWSsize());
+		CheckoutPage cop = new CheckoutPage(driver);
+		cop.FillShippingInfo("omerbrh81@gmail.com", "Omer", "Bracha", "Cnan", "IL", "Tel Aviv", "4458000", "0501234567",
+				"Fixed");
+		PaymentsPage pp = new PaymentsPage(driver);
+		pp.clickPlaceOrder();
+		SuccessPage sp = new SuccessPage(driver);
+		Assert.assertEquals(sp.getThankYouText(),
+				"We'll email you an order confirmation with details and tracking info.");
+	}
+
+}
+            </code></pre>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GROUP 4: Shopping Cart (Tests 18-20) -->
+      <div class="acc-item">
+        <div class="acc-head"><div class="acc-title"><span class="acc-arrow">▶</span> <span class="acc-count">18–20</span> Shopping Cart</div><div class="muted">Cart / multi-item tests</div></div>
+        <div class="acc-body">
+          <p><strong>Summary:</strong> Add multiple accessories, edit quantities, delete items and verify cart behavior and prices.</p>
+		  
+		   <!-- Lazy video - add to cart -->
+          <div class="video-container" style="margin-bottom:12px;">
+            <video controls preload="none" playsinline class="demo-video" data-src="videos/Add-to-cart-tests.mp4" aria-label="Add to cart demo video">
+              <source src="videos/Add-to-cart-tests.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="video-desc small" style="margin-top:6px;">Demo: Add to cart tests (short walkthrough)</p>
+          </div>
+
+          <!-- TEST 18 -->
+          <div class="test-case positive">
+            <h4>✅ tc_18_AddingSeveralItemsToCartTest</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Additional items")
+	@Story("Buying a bag, sports accessory, and watch and complete checkout")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects a bag, sports accessory, and watch and verifies that they were actually added to the shopping cart.")
+	public void tc_18_AddingSeveralItemsToCartTest() throws InterruptedException {
+		BagsPage bp = new BagsPage(driver);
+		bp.BuyBags("Endeavor Daytrip Backpack");
+
+		EqiipmentPage ep = new EqiipmentPage(driver);
+		ep.BuyEquipment("Affirm Water Bottle");
+
+		WatchesPage wp = new WatchesPage(driver);
+		wp.BuyWatches("Aim Analog Watch");
+
+		MenuToolBar mtp = new MenuToolBar(driver);
+		Assert.assertTrue(mtp.isCartCorrect(bp.getItem(), ep.getItem(), wp.getItem()),
+				"Cart items do not match the expected items, ignoring order");
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 19 -->
+          <div class="test-case positive">
+            <h4>✅ tc_19_EditingItemsNumbers</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Shopping cart testing")
+	@Story("Selecting a number of men's clothing items in a variety of colors and sizes, adding them to the cart and changing the quantity")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects a number of men's clothing items in the requested sizes and colors, adds them to the cart, changes their quantity in the cart itself, and verifies that the quantity and price have changed to the required ones accordingly.")
+	public void tc_19_EditingItemsNumbers() {
+		MenJacketsPage mjp = new MenJacketsPage(driver);
+		mjp.buyMenJackets("Jupiter All-Weather Trainer", "m", "blue");
+		MenHoodiesPage mhp = new MenHoodiesPage(driver);
+		mhp.buyMenHoodies("Frankie Sweatshirt", "l", "white");
+		MenTeesPage mtp = new MenTeesPage(driver);
+		mtp.buyMenTees("Aero Daily Fitness Tee", "m", "black");
+		MenTanksPage mt = new MenTanksPage(driver);
+		mt.buyManTanks("Helios Endurance Tank", "s", "blue");
+		MenPantsPage mpp = new MenPantsPage(driver);
+		mpp.buyMenPants("Geo Insulated Jogging Pant", "32", "red");
+		MenShortsPage msp = new MenShortsPage(driver);
+		msp.buyMenShorts("Apollo Running Short", "33", "black");
+		msp.goToCartPage(false);
+		Cartpage cp = new Cartpage(driver);
+		cp.editQtyOfAllItems("2");
+		takeScreenshot();
+		Assert.assertEquals(cp.getFinalPriceSecond(), cp.getQuantityToEdit() * cp.getFinalPriceFirst(),
+				"Final price after edit is not calculated correctly");
+	}
+            </code></pre>
+          </div>
+
+          <!-- TEST 20 -->
+          <div class="test-case positive">
+            <h4>✅ tc_20_deletingItemsFromTheCart</h4>
+            <pre><code class="language-java">
+@Test
+	@Feature("Shopping cart testing")
+	@Story("Selecting a number of women's clothing items in a variety of colors and sizes, adding them to the cart and changing the quantity")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("This test selects a number of women's clothing items in the requested sizes and colors, adds them to the cart, reduces their quantity in the cart itself, and verifies that the quantity and price have changed to the required ones accordingly.")
+	public void tc_20_deletingItemsFromTheCart() {
+		WomenJacketsPage wjp = new WomenJacketsPage(driver);
+		wjp.buyWomenJackets("Neve Studio Dance Jacket", "s", "black");
+		WomenHoodiesPage whp = new WomenHoodiesPage(driver);
+		whp.buyWomenHoodies("Hera Pullover Hoodie", "l", "green");
+		WomenTeesPage wtp = new WomenTeesPage(driver);
+		wtp.buyWomenTees("Tiffany Fitness Tee", "m", "white");
+		WomenBrasPage wbp = new WomenBrasPage(driver);
+		wbp.buyWomenBras("Lucia Cross-Fit Bra", "s", "orange");
+		WomenPantsPage wpp = new WomenPantsPage(driver);
+		wpp.buyWomenTees("Carina Basic Capri", "28", "blue");
+		WomenShortsPage wsp = new WomenShortsPage(driver);
+		wsp.buyWomenShorts("Maxima Drawstring Short", "29", "yellow");
+		wsp.goToCartPage(false);
+		takeScreenshot();
+		Cartpage cp = new Cartpage(driver);
+		cp.deleteItemFromCart("Neve Studio Dance Jacket");
+		Assert.assertTrue(cp.getFinalPriceFirst() > cp.getFinalPriceSecond(),
+				"Price after deletion is not lower than before");
+	}
+
+}
+            </code></pre>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- accordion -->
+  </section>
+
+  <!-- REPORTS -->
+  <!-- REPORTS -->
+<section id="reports" class="container">
+  <h3>Reports</h3>
+  <p class="small">Visual summary of automated test runs. Click any graph to enlarge.</p>
+
+  <!-- --- Graphs grid (images must be placed in /pictures folder) --- -->
+  <div class="graphs-grid" aria-label="Test graphs">
+    <div class="graph-card" role="group" aria-labelledby="g1-title">
+      <img src="pictures/graph1.png" alt="Pass rate and tests per package" class="graph-img" loading="lazy" data-graph="graph1">
+      <h4 id="g1-title">Pass Rate & Packages</h4>
+      <p class="graph-desc">Percent of passed tests (out of 20) and distribution by test package / test names.</p>
+      <button class="btn btn-outline open-graph" data-src="pictures/graph1.png" aria-label="Open graph 1">Open</button>
+    </div>
+
+    <div class="graph-card" role="group" aria-labelledby="g2-title">
+      <img src="pictures/graph2.png" alt="Test distribution by hardware and success" class="graph-img" loading="lazy" data-graph="graph2">
+      <h4 id="g2-title">Hardware Distribution (Pie)</h4>
+      <p class="graph-desc">Pie chart showing tests by hardware type and success breakdown.</p>
+      <button class="btn btn-outline open-graph" data-src="pictures/graph2.png" aria-label="Open graph 2">Open</button>
+    </div>
+  </div>
+
+
+
+  <!-- Image modal (hidden by default) -->
+  <div id="imgModal" class="img-modal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <button class="img-modal-close" aria-label="Close image">✕</button>
+    <div class="img-modal-content">
+      <img src="" alt="Enlarged graph" id="imgModalImg">
+      <p id="imgModalCaption" class="graph-desc" style="margin-top:12px;"></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="container">
+    <div class="section-title">
+      <h3>Contact & About</h3>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <h4>About me</h4>
+        <div class="about-card">
+
+  <!-- NOTE: personal image intentionally NOT inside this text area (you asked it to move under Get in touch).
+       This block contains only the about text and a subtle placeholder for alignment. -->
+  <div class="about-card-text">
+    <p>
+      Detail-oriented QA tester with a B.Sc. in Civil Engineering (Ariel University), experienced in manual testing,
+      test documentation (STP/STD/STR), and automation with Selenium (Java). Worked with Salesforce systems, TestRail and Jira.
+      Familiar with Playwright (JavaScript) and basic SQL. Currently QA at WOBI, responsible for end-to-end releases and validations.
+    </p>
+  </div>
+</div>
+
+        <h4>Quick facts</h4>
+        <div class="quick-facts-grid">
+          <div class="fact-box">
+            <i class="icon grad" aria-hidden="true">🎓</i>
+            <p>B.Sc. Civil Engineering, Ariel University</p>
+          </div>
+          <div class="fact-box">
+            <i class="icon tools" aria-hidden="true">🛠️</i>
+            <p>Tools: Selenium WebDriver, TestNG, Maven, Playwright</p>
+          </div>
+          <div class="fact-box">
+            <i class="icon bug" aria-hidden="true">🐞</i>
+            <p>Bug management: Jira; Test management: TestRail</p>
+          </div>
+          <div class="fact-box">
+            <i class="icon code" aria-hidden="true">💻</i>
+            <p>Languages: Java, JavaScript, SQL</p>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <h4>Get in touch</h4>
+
+        <!-- Personal avatar (moved under Get in touch). Circle, responsive, improved rendering via CSS filters -->
+        <div class="contact-avatar-wrap">
+          <img src="pictures/omer.jpg" alt="Omer Bracha" class="contact-avatar" />
+          <p class="profile-sub">Omer Bracha — QA Tester &amp; Automation<br>Herzliya, Israel</p>
+        </div>
+
+        <!-- Social icons centered under avatar (LinkedIn, GitHub, Email) keep brand colors -->
+        <div class="socials socials-centered" role="navigation" aria-label="Social links">
+          <a class="linkedin" href="https://www.linkedin.com/in/omerbracha/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5C4.98 4.6 4.12 5.5 3 5.5 1.88 5.5 1 4.6 1 3.5 1 2.4 1.88 1.5 3 1.5c1.12 0 1.98.9 1.98 2zM.5 8h4.99V24H.5zM8.5 8h4.79v2.16h.07c.67-1.26 2.3-2.58 4.73-2.58C23.11 7.58 24 10.02 24 13.71V24H19V14.87c0-2.19-.04-5.01-3.05-5.01-3.06 0-3.53 2.39-3.53 4.86V24H8.5z" fill="#fff"/></svg>
+          </a>
+
+          <a class="github" href="https://github.com/omerbrh/FinalProjectAutomationSelenium" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.7 3 8.7 7.2 10.1.5.1.7-.2.7-.5v-1.8c-2.9.6-3.5-1.3-3.5-1.3-.5-1.2-1.3-1.5-1.3-1.5-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 .1 1.7.7 2.1 1.2.2-.9.7-1.5 1.2-1.9-2.3-.3-4.7-1.1-4.7-5 0-1.1.4-2 .9-2.7-.1-.2-.4-1.3.1-2.7 0 0 .7-.2 2.4 1 .7-.2 1.4-.3 2.1-.3s1.4.1 2.1.3c1.7-1.2 2.4-1 2.4-1 .5 1.4.2 2.5.1 2.7.6.7.9 1.6.9 2.7 0 3.9-2.4 4.7-4.7 5 .7.6 1.3 1.6 1.3 3v4.4c0 .3.2.6.7.5 4.2-1.4 7.2-5.4 7.2-10.1C23.1 5.3 18.3.5 12 .5z" fill="#fff"/></svg>
+          </a>
+
+          <a class="email" href="mailto:omerbrh81@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M2 6v12h20V6l-10 6L2 6z" fill="#fff"/></svg>
+          </a>
+        </div>
+      </aside>
+    </div>
+
+    <hr style="margin:20px 0">
+
+    <!-- Contact form -->
+    <!-- NOTE: action uses mailto to open user's mail client; replace with Formspree/EmailJS action when ready -->
+    <form id="contactForm" action="mailto:omerbrh81@gmail.com" method="GET" class="contact-form">
+      <!-- honeypot -->
+      <input type="text" name="company" style="display:none" autocomplete="off" tabindex="-1">
+
+      <div class="form-row">
+        <div class="form-field"><label>Name</label><input type="text" name="name" required></div>
+        <div class="form-field"><label>Email</label><input type="email" name="email" required></div>
+      </div>
+
+      <div class="form-field"><label>Subject</label>
+        <select name="subject">
+          <option>General</option>
+          <option>Hiring</option>
+          <option>Project / Code</option>
+        </select>
+      </div>
+
+      <div class="form-field"><label>Message</label><textarea name="message" required></textarea></div>
+
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+
+  </section>
+
+  <footer class="container">
+    <p>© 2025 Omer Bracha. All rights reserved.</p>
+  </footer>
+
+</main>
+
+<!-- Prism (code highlighting) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<!-- Extra languages if needed: e.g. Java -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+
+<!-- scripts -->
+<script src="scripts.js"></script>
+</body>
+</html>
