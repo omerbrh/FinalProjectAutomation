@@ -23,7 +23,7 @@
 - [🏗️ Project Structure (POM)](#project-structure-pom)
 - [🛠️ Technologies Used](#technologies-used)
 - [🚀 How to Run](#how-to-run)
-- [📊 Test Reporting (Allure)](#test-reporting-allure--visuals)
+- [📊 Test Reporting (Allure) — Visuals](#test-reporting-allure--visuals)
 - [🖼️ Website Screenshots (Coverage)](#website-screenshots-coverage)
 - [💡 Skills Demonstrated](#skills-demonstrated)
 - [📈 Project Impact](#project-impact)
@@ -54,6 +54,7 @@ Final project from a Selenium Automation course — a robust, modular end-to-end
 
 ---
 ## 🏗️ **Project Structure (POM)**
+```
 magento.com.pageobject/ 
 ├── BasePage.java 
 ├── BagsPage.java 
@@ -72,7 +73,7 @@ magento.com.tests/
 ├── BuyingMensClothesTest.java 
 ├── BuyingWomenClothesTest.java 
 ├── SignInTest.java
-
+```
 ---
 
 ## 🛠️ **Technologies Used**
@@ -152,10 +153,11 @@ allure generate allure-results --clean -o allure-report
 
 ⚙️ Designed for scalability and CI/CD integration
 
-
+---
 ## 🙋‍♂️ **Author**
 
 **Omer Bracha**  
 📧 omerbrh81@gmail.com  
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/omerbracha/)
 
+---
