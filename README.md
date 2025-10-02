@@ -1,4 +1,8 @@
-# 🛒 Final Project Automation – Selenium & Java
+<p align="center">
+  <img src="assets/screenshots/luma_logo.png" alt="Luma Logo" width="140"/>
+</p>
+
+# 🛒 **Final Project Automation – Selenium & Java**
 
 <p align="center">
   <img alt="Automation Banner" src="https://img.shields.io/badge/Automation-QA%2FAutomation-orange?style=for-the-badge" />
@@ -12,86 +16,146 @@
 </p>
 
 ---
-## 🎯 Project Overview
 
-**Final Project** from a Selenium Automation course — a robust, modular end-to-end automation suite for the demo e-commerce application:
-
-https://demo.cart2quote.com/what-is-new.html
-
-**Key capabilities**
-- 🧑‍💼 Men’s sportswear flows  
-- 👩‍💼 Women’s sportswear flows  
-- 🎒 Bags & gear flows  
-- ⌚ Watches flows  
-- 🏋️ Sports equipment flows  
-- ✅ Select product variants (size, color)  
-- ✅ Add to cart & validate cart contents  
-- ✅ Sign-in / authentication checks  
-- ✅ Full checkout flow (end-to-end)
-
-> Tests follow Page Object Model (POM) and are designed to be modular, maintainable and data-driven ready.
-## 🏗 Project Structure (POM)
-
-magento.com.pageobject
-│── BasePage.java
-│── BagsPage.java
-│── EquipmentPage.java
-│── MenTanksPage.java
-│── MenuToolBar.java
-│── SignInPage.java
-│── WomenHoodiesPage.java
-│── GearPage.java
-│── PaymentsPage.java
-│── MenShortsPage.java
-
-magento.com.tests
-│── BaseTest.java
-│── AddToCartTest.java
-│── BuyingMensClothesTest.java
-│── BuyingWomenClothesTest.java
-│── SignInTest.java
-
-## 🚀 How to Run
-
-### Prerequisites
-- Java 11 (JDK)  
-- Maven  
-- Browser driver (ChromeDriver/GeckoDriver) OR WebDriverManager configured in project  
-- (Optional) Allure CLI for local report serving
-
-### Run tests
-From the project root run:
-```bash
-mvn clean test
- ```
+## 📚 **Table of Contents**
+- [🎯 Project Overview](#project-overview)
+- [✨ Features](#features)
+- [🏗️ Project Structure (POM)](#project-structure-pom)
+- [🛠️ Technologies Used](#technologies-used)
+- [🚀 How to Run](#how-to-run)
+- [📊 Test Reporting (Allure)](#test-reporting-allure--visuals)
+- [🖼️ Website Screenshots (Coverage)](#website-screenshots-coverage)
+- [💡 Skills Demonstrated](#skills-demonstrated)
+- [📈 Project Impact](#project-impact)
+- [🙋‍♂️ Author](#author)
 
 ---
 
-### Part 5 — Test Reporting (Allure) Visual Placeholders  
+## 🎯 **Project Overview**
 
-```markdown
-## 📊 Test Reporting (Allure) — Visuals
+Final project from a Selenium Automation course — a robust, modular end-to-end automation suite for the demo e-commerce application:
+
+🔗 https://demo.cart2quote.com/what-is-new.html
+
+---
+
+## ✨ **Features**
+
+- 🧑‍💼 Men’s sportswear purchase flows  
+- 👩‍💼 Women’s sportswear purchase flows  
+- 🎒 Bags & gear purchase flows  
+- ⌚ Watches purchase flows  
+- 🏋️ Sports equipment purchase flows  
+- ✅ Product variant selection (size, color)  
+- ✅ Add to cart & cart validation  
+- ✅ Sign-in / authentication checks  
+- ✅ Full checkout flow  
+- 📊 Allure reporting integration
+
+---
+## 🏗️ **Project Structure (POM)**
+magento.com.pageobject/ 
+├── BasePage.java 
+├── BagsPage.java 
+├── EquipmentPage.java 
+├── MenTanksPage.java 
+├── MenuToolBar.java 
+├── SignInPage.java 
+├── WomenHoodiesPage.java 
+├── GearPage.java 
+├── PaymentsPage.java 
+├── MenShortsPage.java
+
+magento.com.tests/ 
+├── BaseTest.java 
+├── AddToCartTest.java 
+├── BuyingMensClothesTest.java 
+├── BuyingWomenClothesTest.java 
+├── SignInTest.java
+
+---
+
+## 🛠️ **Technologies Used**
+
+- **Java 11** – Core language for automation  
+- **Selenium WebDriver** – Browser automation  
+- **TestNG** – Test orchestration  
+- **Maven** – Dependency management  
+- **Allure** – Reporting framework  
+- **Page Object Model (POM)** – Design pattern for maintainability
+
+---
+
+## 🚀 **How to Run**
+
+### 🔧 Prerequisites
+- Java 11 (JDK)  
+- Maven  
+- ChromeDriver or WebDriverManager  
+- (Optional) Allure CLI for local report serving
+
+### ▶️ Run tests
+```bash
+mvn clean test
+```
+
+### 📊 View Allure Report Locally
+```bash
+allure serve allure-results
+```
+
+### 📊 Or generate static report:
+```bash
+allure generate allure-results --clean -o allure-report
+```
+
+---
+
+### 📊 Test Reporting (Allure) — Visuals
+<div align="center"> <img src="assets/allure/graph1.png" alt="Allure Graph 1" width="420" /> <img src="assets/allure/graph2.png" alt="Allure Graph 2" width="420" /> </div>
+
+
+---
+
+## 🖼️ **Website Screenshots (Coverage)**
 
 <div align="center">
-  <img src="assets/allure-diagram-1.png" alt="Allure Diagram 1" width="420" style="border:3px solid #4CAF50; border-radius:10px; padding:6px; margin:6px;" />
-  <img src="assets/allure-diagram-2.png" alt="Allure Diagram 2" width="420" style="border:3px solid #4CAF50; border-radius:10px; padding:6px; margin:6px;" />
-</div>
 
-**Demo Recording / GIF**
-
-<div align="center">
-  <img src="assets/demo-run.gif" alt="Demo Run GIF" width="760" style="border:3px solid #FF9800; border-radius:12px; padding:6px; margin:6px;" />
-</div>
-
-
-## 🖼 Website Screenshots (Coverage)
-
-<div align="center">
-
-| Men’s Sportswear | Women’s Sportswear | Bags & Gear | Sports Equipment | Watches |
-|---:|:---:|:---:|:---:|:---:|
-| <img src="assets/men_sportswear.png" alt="Men" width="220" style="border:2px solid #2196F3; border-radius:10px; padding:4px;" /> | <img src="assets/women_sportswear.png" alt="Women" width="220" style="border:2px solid #2196F3; border-radius:10px; padding:4px;" /> | <img src="assets/bags.png" alt="Bags" width="220" style="border:2px solid #2196F3; border-radius:10px; padding:4px;" /> | <img src="assets/equipment.png" alt="Equipment" width="220" style="border:2px solid #2196F3; border-radius:10px; padding:4px;" /> | <img src="assets/watches.png" alt="Watches" width="220" style="border:2px solid #2196F3; border-radius:10px; padding:4px;" /> |
+| 🧑‍💼 Men’s Sportswear | 👩‍💼 Women’s Sportswear | 🎒 Bags & Gear | 🏋️ Sports Equipment | ⌚ Watches |
+|:--:|:--:|:--:|:--:|:--:|
+| <img src="assets/screenshots/men.png" alt="Men" width="180"/> | <img src="assets/screenshots/women.png" alt="Women" width="180"/> | <img src="assets/screenshots/bags.png" alt="Bags" width="180"/> | <img src="assets/screenshots/gear.png" alt="Gear" width="180"/> | <img src="assets/screenshots/watch.png" alt="Watch" width="180"/> |
 
 </div>
 
+---
+
+### 💡 Skills Demonstrated
+✅ Test automation architecture using Page Object Model (POM)
+
+✅ Integration of Allure for professional test reporting
+
+✅ Modular and scalable test design
+
+✅ Real-world e-commerce flow coverage
+
+✅ Clean code practices and reusable components
+
+
+---
+
+### 📈 Project Impact
+🔍 Covers 5 major product categories
+
+🛒 Validates full purchase flow from login to checkout
+
+📸 Includes visual reporting and screenshots
+
+⚙️ Designed for scalability and CI/CD integration
+
+
+## 🙋‍♂️ **Author**
+
+**Omer Bracha**  
+📧 omerbrh81@gmail.com  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/omerbracha/)
 
