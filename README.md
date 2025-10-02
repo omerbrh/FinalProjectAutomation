@@ -130,7 +130,7 @@ allure generate allure-results --clean -o allure-report
 
 ---
 
-### 💡 Skills Demonstrated
+## 💡 **Skills Demonstrated**
 ✅ Test automation architecture using Page Object Model (POM)
 
 ✅ Integration of Allure for professional test reporting
@@ -144,7 +144,7 @@ allure generate allure-results --clean -o allure-report
 
 ---
 
-### 📈 Project Impact
+## 📈 **Project Impact**
 🔍 Covers 5 major product categories
 
 🛒 Validates full purchase flow from login to checkout
