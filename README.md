@@ -23,7 +23,7 @@
 - [🏗️ Project Structure (POM)](#project-structure-pom)
 - [🛠️ Technologies Used](#technologies-used)
 - [🚀 How to Run](#how-to-run)
-- [📊 Test Reporting (Allure) — Visuals](#test-reporting-allure--visuals)
+- [📊 Test Reporting (Allure) — Visuals](#test-reporting-allure-visuals)
 - [🖼️ Website Screenshots (Coverage)](#website-screenshots-coverage)
 - [💡 Skills Demonstrated](#skills-demonstrated)
 - [📈 Project Impact](#project-impact)
@@ -54,6 +54,7 @@ Final project from a Selenium Automation course — a robust, modular end-to-end
 
 ---
 ## 🏗️ **Project Structure (POM)**
+
 ```
 magento.com.pageobject/ 
 ├── BasePage.java 
