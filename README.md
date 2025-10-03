@@ -20,16 +20,16 @@
 ## 📚 **Table of Contents**
 - [🎯 Project Overview](#project-overview)
 - [✨ Features](#features)
-- [🎥 Demo Run – Sign In Flow](#demo-run--sign-in-flow)
-- [🌐 Live Project Demo](#live-project-demo)
-- [🏗️ Project Structure (POM)](#project-structure-pom)
-- [🛠️ Technologies Used](#technologies-used)
-- [🚀 How to Run](#how-to-run)
-- [📊 Test Reporting (Allure) — Visuals](#test-reporting-allure--visuals)
-- [🖼️ Website Screenshots (Coverage)](#website-screenshots-coverage)
-- [💡 Skills Demonstrated](#skills-demonstrated)
-- [📈 Project Impact](#project-impact)
-- [🙋‍♂️ Author](#author)
+- [🎥 Demo Run – Sign In Flow](#🎥-demo-run--sign-in-flow)
+- [🌐 Live Project Demo](#🌐-live-project-demo)
+- [🏗️ Project Structure (POM)](#🏗️-project-structure-pom)
+- [🛠️ Technologies Used](#🛠️-technologies-used)
+- [🚀 How to Run](#🚀-how-to-run)
+- [📊 Test Reporting (Allure) — Visuals](#📊-test-reporting-allure--visuals)
+- [🖼️ Website Screenshots (Coverage)](#🖼️-website-screenshots-coverage)
+- [💡 Skills Demonstrated](#💡-skills-demonstrated)
+- [📈 Project Impact](#📈-project-impact)
+- [🙋‍♂️ Author](#🙋‍♂️-author)
 
 ---
 
@@ -57,14 +57,14 @@ Final project from a Selenium Automation course — a robust, modular end-to-end
 ---
 
 
-🎥 Demo Run – Sign In Flow
+## 🎥 Demo Run – Sign In Flow
 <p align="center"> <img src="assets/SignIn-tests.gif" alt="Sign In Test Demo" width="720"/> </p>
 
 This demo showcases the automated sign-in flow, including field validation, error handling, and successful login simulation.
 
 ---
 
-🌐 Live Project Demo
+## 🌐 Live Project Demo
 <p align="center"> <a href="https://omerbrh.github.io/FinalProjectAutomation/" target="_blank"> <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blue?style=for-the-badge" alt="Live Demo Button" /> </a> </p>
 
 Explore the full documentation and visual interface of the project through the live demo site.
