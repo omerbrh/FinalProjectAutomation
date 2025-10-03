@@ -63,7 +63,7 @@ This demo showcases the automated sign-in flow, including field validation, erro
 ---
 
 🌐 Live Project Demo
-<p align="center"> <a href="docs/index.html" target="_blank"> <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blue?style=for-the-badge" alt="Live Demo Button" /> </a> </p>
+<p align="center"> <a href="docs/finalProjectWebsite.html" target="_blank"> <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blue?style=for-the-badge" alt="Live Demo Button" /> </a> </p>
 
 Explore the full documentation and visual interface of the project through the live demo site.
 
