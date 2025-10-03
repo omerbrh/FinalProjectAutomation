@@ -22,6 +22,7 @@
 - [✨ Features](#features-)
 - [🎥 Demo Run – Sign In Flow](#demo-run--sign-in-flow-)
 - [🌐 Live Project Demo](#live-project-demo-)
+- [📄 Test Design Document](#test-design-document-)
 - [🏗️ Project Structure (POM)](#project-structure-pom-)
 - [🛠️ Technologies Used](#technologies-used-)
 - [🚀 How to Run](#how-to-run-)
@@ -70,7 +71,7 @@ This demo showcases the automated sign-in flow, including field validation, erro
 Explore the full documentation and visual interface of the project through the live demo site.
 
 ---
-## 📄 Test Design Document
+##  Test Design Document 📄
 
 This project includes a detailed test design document that outlines all functional test scenarios for the demo e-commerce site.
 
