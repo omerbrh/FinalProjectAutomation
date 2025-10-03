@@ -18,20 +18,22 @@
 ---
 
 ## 📚 **Table of Contents**
-- [🎯 Project Overview](#project-overview)
-- [✨ Features](#features)
-- [🏗️ Project Structure (POM)](#project-structure-pom)
-- [🛠️ Technologies Used](#technologies-used)
-- [🚀 How to Run](#how-to-run)
-- [📊 Test Reporting (Allure) — Visuals](#test-reporting-allure-visuals)
-- [🖼️ Website Screenshots (Coverage)](#website-screenshots-coverage)
-- [💡 Skills Demonstrated](#skills-demonstrated)
-- [📈 Project Impact](#project-impact)
-- [🙋‍♂️ Author](#author)
+- [🎯 Project Overview](#project-overview-)
+- [✨ Features](#features-)
+- [🎥 Demo Run – Sign In Flow](#demo-run--sign-in-flow-)
+- [🌐 Live Project Demo](#live-project-demo-)
+- [🏗️ Project Structure (POM)](#project-structure-pom-)
+- [🛠️ Technologies Used](#technologies-used-)
+- [🚀 How to Run](#how-to-run-)
+- [📊 Test Reporting (Allure) — Visuals](#test-reporting-allure--visuals-)
+- [🖼️ Website Screenshots (Coverage)](#website-screenshots-coverage-)
+- [💡 Skills Demonstrated](#skills-demonstrated-)
+- [📈 Project Impact](#project-impact-)
+- [🙋‍♂️ Author](#author-)
 
 ---
 
-## 🎯 **Project Overview**
+##  **Project Overview** 🎯
 
 Final project from a Selenium Automation course — a robust, modular end-to-end automation suite for the demo e-commerce application:
 
@@ -39,7 +41,7 @@ Final project from a Selenium Automation course — a robust, modular end-to-end
 
 ---
 
-## ✨ **Features**
+##  **Features** ✨
 
 - 🧑‍💼 Men’s sportswear purchase flows  
 - 👩‍💼 Women’s sportswear purchase flows  
@@ -55,20 +57,20 @@ Final project from a Selenium Automation course — a robust, modular end-to-end
 ---
 
 
-🎥 Demo Run – Sign In Flow
+##  Demo Run – Sign In Flow 🎥
 <p align="center"> <img src="assets/SignIn-tests.gif" alt="Sign In Test Demo" width="720"/> </p>
 
 This demo showcases the automated sign-in flow, including field validation, error handling, and successful login simulation.
 
 ---
 
-🌐 Live Project Demo
-<p align="center"> <a href="docs/finalProjectWebsite.html" target="_blank"> <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blue?style=for-the-badge" alt="Live Demo Button" /> </a> </p>
+##  Live Project Demo 🌐
+<p align="center"> <a href="https://omerbrh.github.io/FinalProjectAutomation/" target="_blank"> <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blue?style=for-the-badge" alt="Live Demo Button" /> </a> </p>
 
 Explore the full documentation and visual interface of the project through the live demo site.
 
 ---
-## 🏗️ **Project Structure (POM)**
+##  **Project Structure (POM)** 🏗️
 
 ```
 magento.com.pageobject/ 
@@ -92,7 +94,7 @@ magento.com.tests/
 ```
 ---
 
-## 🛠️ **Technologies Used**
+##  **Technologies Used** 🛠️
 
 - **Java 11** – Core language for automation  
 - **Selenium WebDriver** – Browser automation  
@@ -103,7 +105,7 @@ magento.com.tests/
 
 ---
 
-## 🚀 **How to Run**
+##  **How to Run** 🚀
 
 ### 🔧 Prerequisites
 - Java 11 (JDK)  
@@ -111,30 +113,30 @@ magento.com.tests/
 - ChromeDriver or WebDriverManager  
 - (Optional) Allure CLI for local report serving
 
-### ▶️ Run tests
+###  Run tests ▶️
 ```bash
 mvn clean test
 ```
 
-### 📊 View Allure Report Locally
+###  View Allure Report Locally 📊
 ```bash
 allure serve allure-results
 ```
 
-### 📊 Or generate static report:
+###  Or generate static report: 📊
 ```bash
 allure generate allure-results --clean -o allure-report
 ```
 
 ---
 
-### 📊 Test Reporting (Allure) — Visuals
+###  Test Reporting (Allure) — Visuals 📊
 <div align="center"> <img src="assets/allure/graph1.png" alt="Allure Graph 1" width="420" /> <img src="assets/allure/graph2.png" alt="Allure Graph 2" width="420" /> </div>
 
 
 ---
 
-## 🖼️ **Website Screenshots (Coverage)**
+##  **Website Screenshots (Coverage)** 🖼️
 
 <div align="center">
 
@@ -146,7 +148,7 @@ allure generate allure-results --clean -o allure-report
 
 ---
 
-## 💡 **Skills Demonstrated**
+##  **Skills Demonstrated** 💡
 ✅ Test automation architecture using Page Object Model (POM)
 
 ✅ Integration of Allure for professional test reporting
@@ -160,7 +162,7 @@ allure generate allure-results --clean -o allure-report
 
 ---
 
-## 📈 **Project Impact**
+##  **Project Impact** 📈
 🔍 Covers 5 major product categories
 
 🛒 Validates full purchase flow from login to checkout
@@ -169,8 +171,8 @@ allure generate allure-results --clean -o allure-report
 
 ⚙️ Designed for scalability and CI/CD integration
 
----
-## 🙋‍♂️ **Author**
+--- 
+##  **Author** 🙋‍♂️
 
 **Omer Bracha**  
 📧 omerbrh81@gmail.com  
