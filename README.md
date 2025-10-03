@@ -53,6 +53,21 @@ Final project from a Selenium Automation course — a robust, modular end-to-end
 - 📊 Allure reporting integration
 
 ---
+
+
+🎥 Demo Run – Sign In Flow
+<p align="center"> <img src="assets/SignIn-tests.gif" alt="Sign In Test Demo" width="720"/> </p>
+
+This demo showcases the automated sign-in flow, including field validation, error handling, and successful login simulation.
+
+---
+
+🌐 Live Project Demo
+<p align="center"> <a href="docs/index.html" target="_blank"> <img src="https://img.shields.io/badge/View%20Live%20Demo-Click%20Here-blue?style=for-the-badge" alt="Live Demo Button" /> </a> </p>
+
+Explore the full documentation and visual interface of the project through the live demo site.
+
+---
 ## 🏗️ **Project Structure (POM)**
 
 ```
