@@ -31,7 +31,6 @@
 - [📈 Project Impact](#project-impact)
 - [🙋‍♂️ Author](#author)
 
-
 ---
 
 ## 🎯 **Project Overview**
