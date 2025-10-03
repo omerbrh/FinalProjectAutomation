@@ -70,6 +70,19 @@ This demo showcases the automated sign-in flow, including field validation, erro
 Explore the full documentation and visual interface of the project through the live demo site.
 
 ---
+## 📄 Test Design Document
+
+This project includes a detailed test design document that outlines all functional test scenarios for the demo e-commerce site.
+
+🗂️ The document covers:
+- Registration flow (positive and negative cases)
+- Men's and women's clothing purchases (upper and lower)
+- Multi-item checkout
+- Cart functionality and validations
+
+📎 View the full document [here](./tests-docs/Test%20Design%20%E2%80%93%20Demo.Cart2.pdf)
+---
+
 ##  **Project Structure (POM)** 🏗️
 
 ```
