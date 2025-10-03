@@ -18,16 +18,18 @@
 ---
 
 ## 📚 **Table of Contents**
-- [🎯 Project Overview](#project-overview)
-- [✨ Features](#features)
-- [🏗️ Project Structure (POM)](#project-structure-pom)
-- [🛠️ Technologies Used](#technologies-used)
-- [🚀 How to Run](#how-to-run)
-- [📊 Test Reporting (Allure) — Visuals](#test-reporting-allure-visuals)
-- [🖼️ Website Screenshots (Coverage)](#website-screenshots-coverage)
-- [💡 Skills Demonstrated](#skills-demonstrated)
-- [📈 Project Impact](#project-impact)
-- [🙋‍♂️ Author](#author)
+- [🎯 Project Overview](#-project-overview)
+- [✨ Features](#-features)
+- [🎥 Demo Run – Sign In Flow](#demo-run--sign-in-flow)
+- [🌐 Live Project Demo](#live-project-demo)
+- [🏗️ Project Structure (POM)](#-project-structure-pom)
+- [🛠️ Technologies Used](#-technologies-used)
+- [🚀 How to Run](#-how-to-run)
+- [📊 Test Reporting (Allure) — Visuals](#-test-reporting-allure--visuals)
+- [🖼️ Website Screenshots (Coverage)](#-website-screenshots-coverage)
+- [💡 Skills Demonstrated](#-skills-demonstrated)
+- [📈 Project Impact](#-project-impact)
+- [🙋‍♂️ Author](#-author)
 
 ---
 
