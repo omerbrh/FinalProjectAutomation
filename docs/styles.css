@@ -206,8 +206,55 @@ pre{background:#0f1724;color:#e6eef6;padding:12px;border-radius:6px;overflow:aut
 .copy-btn:hover { background:rgba(255,255,255,0.12); transform:translateY(-2px); }
 
 /* video container */
-.video-container { margin-top:12px; }
-.video-container video { width:100%; border-radius:10px; display:block; max-height:320px; background:#000; }
+/* NOTE: updated layout for video area — centered, constrained width, responsive and works both for <video> and embedded YouTube iframes */
+.video-container {
+  margin-top:12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;         /* center horizontally */
+  justify-content: center;
+}
+
+/* keep existing HTML <video> styling but constrain max-width and center */
+.video-container video.demo-video {
+  width: 100%;
+  max-width: 960px;
+  border-radius:10px;
+  display:block;
+  max-height: 480px;
+  background:#000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* responsive embed for YouTube iframes (16:9) */
+.embed-video {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.embed-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+}
+
+/* small screens: make sure videos are comfortably sized */
+@media (max-width: 640px) {
+  .video-container video.demo-video,
+  .embed-video { max-width: 100%; }
+  .video-container { padding-left: 8px; padding-right: 8px; }
+}
+
 .video-desc { color:var(--muted); font-size:0.95rem; margin:8px 0 0; }
 
 /* reports */

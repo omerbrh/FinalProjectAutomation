@@ -172,12 +172,11 @@
         <div class="acc-body">
           <p><strong>Summary:</strong> Validate login functionality with positive and negative scenarios (invalid credentials, invalid email, empty fields).</p>
 		  
-		   <!-- Lazy video - sign in -->
+		   <!-- Embedded YouTube - sign in -->
           <div class="video-container" style="margin-bottom:12px;">
-            <video controls preload="none" playsinline class="demo-video" data-src="videos/SignIn-tests.mp4" aria-label="sign-in demo video">
-              <source src="videos/SignIn-tests.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <div class="embed-video">
+              <iframe data-src="https://www.youtube-nocookie.com/embed/145XoP9UUXU" title="Sign-in demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="Sign-in demo iframe"></iframe>
+            </div>
             <p class="video-desc small" style="margin-top:6px;">Demo: sign-in tests </p>
           </div>
 
@@ -289,12 +288,11 @@
         <div class="acc-body">
           <p><strong>Summary:</strong> Select men's clothing items and complete checkout flows (jacket, hoodie, tees, tank, pants, shorts).</p>
 
-          <!-- Lazy video - men's clothing -->
+          <!-- Embedded YouTube - men's clothing -->
           <div class="video-container" style="margin-bottom:12px;">
-            <video controls preload="none" playsinline class="demo-video" data-src="videos/mens-clothing-tests.mp4" aria-label="Men's clothing demo video">
-              <source src="videos/mens-clothing-tests.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <div class="embed-video">
+              <iframe data-src="https://www.youtube-nocookie.com/embed/AvcFqTgOcJQ" title="Men's clothing demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="Men's clothing demo iframe"></iframe>
+            </div>
             <p class="video-desc small" style="margin-top:6px;">Demo: Men's clothing purchase tests (short walkthrough)</p>
           </div>
 
@@ -439,7 +437,7 @@
 		mpp.buyMenPants("Caesar Warm-Up Pant", "36", "purple");
 		mpp.goToCartPage(false);
 		takeScreenshot();
-		Cartpage cp = new Cartpage(driver);
+		Cartpage cp = new Cartpage(driver;
 		cp.DoCheckout();
 		Assert.assertEquals(cp.getItemName(), mpp.getPitem());
 		Assert.assertEquals(cp.getItemColor(), mpp.getPcolor());
@@ -501,12 +499,11 @@
         <div class="acc-body">
           <p><strong>Summary:</strong> Select women's clothing items and complete checkout flows (jackets, hoodies, tees, bras/tanks, pants, shorts).</p>
 
-          <!-- Lazy video - women's clothing -->
+          <!-- Embedded YouTube - women's clothing -->
           <div class="video-container" style="margin-bottom:12px;">
-            <video controls preload="none" playsinline class="demo-video" data-src="videos/womens-clothing-tests.mp4" aria-label="Women's clothing demo video">
-              <source src="videos/womens-clothing-tests.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <div class="embed-video">
+              <iframe data-src="https://www.youtube-nocookie.com/embed/w_37lKxOz04" title="Women's clothing demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="Women's clothing demo iframe"></iframe>
+            </div>
             <p class="video-desc small" style="margin-top:6px;">Demo: Women's clothing purchase tests (short walkthrough)</p>
           </div>
 
@@ -705,12 +702,11 @@ public void tc_13_buyWomenHoodies() {
         <div class="acc-body">
           <p><strong>Summary:</strong> Add multiple accessories, edit quantities, delete items and verify cart behavior and prices.</p>
 		  
-		   <!-- Lazy video - add to cart -->
+		   <!-- Embedded YouTube - add to cart -->
           <div class="video-container" style="margin-bottom:12px;">
-            <video controls preload="none" playsinline class="demo-video" data-src="videos/Add-to-cart-tests.mp4" aria-label="Add to cart demo video">
-              <source src="videos/Add-to-cart-tests.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <div class="embed-video">
+              <iframe data-src="https://www.youtube-nocookie.com/embed/21mrGkJaGu8" title="Add to cart demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="Add to cart demo iframe"></iframe>
+            </div>
             <p class="video-desc small" style="margin-top:6px;">Demo: Add to cart tests (short walkthrough)</p>
           </div>
 

@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
           // lazy-load any demo video inside this body
           const vid = body.querySelector('video.demo-video');
+          const iframe = body.querySelector('.embed-video iframe[data-src]');
           if(vid && vid.dataset && vid.dataset.src) {
             if(!vid.getAttribute('data-loaded')) {
               const src = vid.dataset.src;
@@ -93,7 +94,19 @@ document.addEventListener('DOMContentLoaded', function(){
               vid.setAttribute('data-loaded','true');
               try { vid.load(); } catch(e){}
             }
+          } else if(iframe && !iframe.getAttribute('data-loaded')) {
+            // lazy-load iframe src (YouTube)
+            iframe.setAttribute('src', iframe.dataset.src);
+            iframe.setAttribute('data-loaded', 'true');
           }
+
+          // scroll the expanded panel into view so header and video are visible
+          try {
+            // small timeout so the browser lays out the opened content first
+            setTimeout(() => {
+              body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 40);
+          } catch(e){}
         }
       });
 
@@ -118,6 +131,19 @@ document.addEventListener('DOMContentLoaded', function(){
       firstBody.classList.add('open');
       const arrow = first.querySelector('.acc-arrow');
       if(arrow) arrow.style.transform = 'rotate(90deg)';
+
+      // lazy-load video/iframe in first body if present
+      const vid = firstBody.querySelector('video.demo-video');
+      const iframe = firstBody.querySelector('.embed-video iframe[data-src]');
+      if(vid && vid.dataset && vid.dataset.src && !vid.getAttribute('data-loaded')) {
+        const source = vid.querySelector('source');
+        if(source && !source.src) source.src = vid.dataset.src;
+        vid.setAttribute('data-loaded','true');
+        try { vid.load(); } catch(e){}
+      } else if(iframe && !iframe.getAttribute('data-loaded')) {
+        iframe.setAttribute('src', iframe.dataset.src);
+        iframe.setAttribute('data-loaded','true');
+      }
     }
   })();
 
@@ -133,13 +159,17 @@ document.addEventListener('DOMContentLoaded', function(){
           body.classList.add('open');
           const arrow = item.querySelector('.acc-arrow');
           if(arrow) arrow.style.transform = 'rotate(90deg)';
-          // lazy load video if any
+          // lazy load video/iframe if any
           const vid = body.querySelector('video.demo-video');
+          const iframe = body.querySelector('.embed-video iframe[data-src]');
           if(vid && vid.dataset && vid.dataset.src && !vid.getAttribute('data-loaded')) {
             const source = vid.querySelector('source');
             if(source && !source.src) source.src = vid.dataset.src;
             vid.setAttribute('data-loaded','true');
             try { vid.load(); } catch(e){}
+          } else if(iframe && !iframe.getAttribute('data-loaded')) {
+            iframe.setAttribute('src', iframe.dataset.src);
+            iframe.setAttribute('data-loaded','true');
           }
         }
       });
